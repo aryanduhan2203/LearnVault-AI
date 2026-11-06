@@ -31,3 +31,6 @@ Thumbs.db
 
 # Generated transcript data
 backend/data/transcripts/*
+
+# Generated data
+backend/data/
