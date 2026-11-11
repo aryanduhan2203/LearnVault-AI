@@ -34,3 +34,7 @@ backend/data/transcripts/*
 
 # Generated data
 backend/data/
+
+.env
+.env.*
+!.env.example
