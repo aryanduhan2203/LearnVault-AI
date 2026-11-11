@@ -10,7 +10,11 @@ class ChatRequest(BaseModel):
         max_length=1000,
         description="Question asked by the student"
     )
-
+    playlist_id: str = Field(
+        ...,
+        min_length=1,
+        description="Selected YouTube playlist ID"
+    )
     limit: int = Field(
         default=5,
         ge=1,

@@ -23,10 +23,16 @@ class RAGService:
             "llama-3.3-70b-versatile"
         )
 
-    def generate_answer(self, query: str, limit: int = 5):
+    def generate_answer(
+    self,
+    query: str,
+    playlist_id: str,
+    limit: int = 5
+):
 
         retrieved_chunks = self.search_service.search(
             query=query,
+            playlist_id=playlist_id,
             limit=limit
         )
 

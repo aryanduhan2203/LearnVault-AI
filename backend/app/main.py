@@ -102,6 +102,7 @@ def chat(request: ChatRequest, http_request: Request):
 
         result = rag_service.generate_answer(
             query=request.question,
+            playlist_id=request.playlist_id,
             limit=request.limit
         )
 
